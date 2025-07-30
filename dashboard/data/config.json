@@ -1,0 +1,420 @@
+{
+  "dashboard": {
+    "title": "IT Development Plan Dashboard",
+    "version": "1.0.0",
+    "refreshInterval": 30000,
+    "theme": "professional",
+    "currency": "USD",
+    "dateFormat": "MM/DD/YYYY"
+  },
+  "project": {
+    "name": "Strategic Web & Mobile Application Development Initiative",
+    "startDate": "2024-01-15",
+    "duration": "24 months",
+    "phases": [
+      {
+        "id": 1,
+        "name": "Foundation & Finance",
+        "duration": "8 months",
+        "description": "Infrastructure setup and Finance department applications",
+        "color": "#27ae60"
+      },
+      {
+        "id": 2,
+        "name": "Administration & Integration",
+        "duration": "8 months", 
+        "description": "Administration department applications and system integrations",
+        "color": "#f39c12"
+      },
+      {
+        "id": 3,
+        "name": "Optimization & Expansion",
+        "duration": "8 months",
+        "description": "Performance optimization, AI integration, and advanced analytics",
+        "color": "#e74c3c"
+      }
+    ]
+  },
+  "budget": {
+    "totalBudget": 1800000,
+    "currency": "USD",
+    "categories": [
+      {
+        "name": "Development Team",
+        "amount": 1200000,
+        "percentage": 67,
+        "color": "#3498db",
+        "description": "Full-time developers, architects, and technical leads"
+      },
+      {
+        "name": "Infrastructure & Licensing",
+        "amount": 300000,
+        "percentage": 17,
+        "color": "#27ae60",
+        "description": "Cloud services, software licenses, and infrastructure"
+      },
+      {
+        "name": "External Consultancy",
+        "amount": 150000,
+        "percentage": 8,
+        "color": "#f39c12",
+        "description": "Security audits, specialized consulting, and expert services"
+      },
+      {
+        "name": "Training & Change Management",
+        "amount": 100000,
+        "percentage": 6,
+        "color": "#e74c3c",
+        "description": "User training, change management, and support programs"
+      },
+      {
+        "name": "Contingency",
+        "amount": 180000,
+        "percentage": 10,
+        "color": "#9b59b6",
+        "description": "Risk mitigation and unexpected costs buffer"
+      }
+    ]
+  },
+  "departments": [
+    {
+      "id": "finance",
+      "name": "Finance Department",
+      "color": "#27ae60",
+      "icon": "fas fa-calculator",
+      "applications": [
+        {
+          "name": "Invoice Management System",
+          "description": "Automated invoice processing and approval workflows",
+          "priority": "high",
+          "estimatedHours": 800
+        },
+        {
+          "name": "Income/Outcome Tracking",
+          "description": "Dynamic financial dashboards and budget analysis",
+          "priority": "high",
+          "estimatedHours": 600
+        },
+        {
+          "name": "Project Investment Tracking",
+          "description": "ROI calculation and investment portfolio management",
+          "priority": "medium",
+          "estimatedHours": 500
+        },
+        {
+          "name": "Mobile Financial App",
+          "description": "Mobile expense approval and financial KPI monitoring",
+          "priority": "medium",
+          "estimatedHours": 700
+        }
+      ]
+    },
+    {
+      "id": "administration",
+      "name": "Administration Department",
+      "color": "#f39c12",
+      "icon": "fas fa-cogs",
+      "applications": [
+        {
+          "name": "Vehicle Booking System",
+          "description": "Fleet management and scheduling with maintenance tracking",
+          "priority": "high",
+          "estimatedHours": 600
+        },
+        {
+          "name": "Meeting Room Management",
+          "description": "Smart booking with conflict resolution and resource scheduling",
+          "priority": "high",
+          "estimatedHours": 500
+        },
+        {
+          "name": "Agenda & Meeting Dashboard",
+          "description": "Centralized meeting management and action item tracking",
+          "priority": "medium",
+          "estimatedHours": 400
+        },
+        {
+          "name": "Mobile Admin App",
+          "description": "Mobile booking, QR check-in/out, and real-time updates",
+          "priority": "medium",
+          "estimatedHours": 650
+        }
+      ]
+    }
+  ],
+  "kpis": [
+    {
+      "name": "Total Investment",
+      "value": "$1.8M",
+      "subtitle": "24-month budget",
+      "icon": "fas fa-dollar-sign",
+      "description": "Complete budget allocated for the IT development project",
+      "target": 1800000,
+      "unit": "USD"
+    },
+    {
+      "name": "Expected ROI",
+      "value": "285%",
+      "subtitle": "3-year projection",
+      "icon": "fas fa-chart-area",
+      "description": "Return on Investment based on projected savings and improvements",
+      "target": 285,
+      "unit": "percentage"
+    },
+    {
+      "name": "Payback Period",
+      "value": "18 months",
+      "subtitle": "Break-even point",
+      "icon": "fas fa-clock",
+      "description": "Time required to recoup initial investment through savings",
+      "target": 18,
+      "unit": "months"
+    },
+    {
+      "name": "Efficiency Gain",
+      "value": "35%",
+      "subtitle": "Operational improvement",
+      "icon": "fas fa-arrow-up",
+      "description": "Expected improvement in operational efficiency",
+      "target": 35,
+      "unit": "percentage"
+    }
+  ],
+  "risks": [
+    {
+      "name": "Security Vulnerabilities",
+      "level": "low",
+      "impact": "high",
+      "probability": "low",
+      "status": "mitigated",
+      "description": "Regular audits and penetration testing scheduled",
+      "mitigation": "Regular security audits, penetration testing, SOC 2 compliance"
+    },
+    {
+      "name": "Integration Complexity",
+      "level": "medium",
+      "impact": "high", 
+      "probability": "medium",
+      "status": "monitoring",
+      "description": "Phased approach and thorough testing planned",
+      "mitigation": "Phased implementation, comprehensive testing protocols"
+    },
+    {
+      "name": "User Adoption",
+      "level": "medium",
+      "impact": "high",
+      "probability": "medium",
+      "status": "planning",
+      "description": "Change management program in development",
+      "mitigation": "Change management programs, training, department champions"
+    },
+    {
+      "name": "Budget Overrun",
+      "level": "low",
+      "impact": "medium",
+      "probability": "medium",
+      "status": "controlled",
+      "description": "10% contingency allocated, agile methodology",
+      "mitigation": "Agile methodology, regular reviews, 10% contingency"
+    }
+  ],
+  "team": {
+    "developmentTeam": [
+      {
+        "role": "Project Manager",
+        "count": 1,
+        "duration": "24 months",
+        "status": "hired",
+        "skills": ["Project Management", "Agile", "Leadership"]
+      },
+      {
+        "role": "Senior Developers",
+        "count": 3,
+        "duration": "18 months",
+        "status": "hiring",
+        "skills": ["React.js", "Node.js", "PostgreSQL", "AWS"]
+      },
+      {
+        "role": "Junior Developers",
+        "count": 2,
+        "duration": "20 months",
+        "status": "planned",
+        "skills": ["JavaScript", "React", "CSS", "API Development"]
+      },
+      {
+        "role": "UI/UX Designer",
+        "count": 1,
+        "duration": "12 months",
+        "status": "planned",
+        "skills": ["Figma", "User Research", "Prototyping", "Mobile Design"]
+      }
+    ],
+    "operationsTeam": [
+      {
+        "role": "DevOps Engineer",
+        "count": 1,
+        "duration": "24 months",
+        "status": "hired",
+        "skills": ["AWS", "Docker", "Kubernetes", "CI/CD"]
+      },
+      {
+        "role": "QA Engineers",
+        "count": 2,
+        "duration": "16 months",
+        "status": "planned",
+        "skills": ["Automation Testing", "Manual Testing", "Security Testing"]
+      },
+      {
+        "role": "Security Consultant",
+        "count": 1,
+        "duration": "6 months",
+        "status": "contracted",
+        "skills": ["Security Audits", "Penetration Testing", "Compliance"]
+      },
+      {
+        "role": "Change Management",
+        "count": 1,
+        "duration": "12 months",
+        "status": "planned",
+        "skills": ["Training", "Documentation", "User Support"]
+      }
+    ]
+  },
+  "timeline": [
+    {
+      "phase": "Month 1-2",
+      "title": "Infrastructure Setup",
+      "description": "Cloud environment, CI/CD pipelines, security protocols",
+      "status": "completed",
+      "deliverables": [
+        "AWS environment setup",
+        "CI/CD pipeline implementation",
+        "Security protocols configuration",
+        "Development environment setup"
+      ]
+    },
+    {
+      "phase": "Month 3-5",
+      "title": "Finance Application Development",
+      "description": "Invoice management, tracking systems, mobile app",
+      "status": "in-progress",
+      "deliverables": [
+        "Invoice Management System",
+        "Income/Outcome Tracking Dashboard",
+        "Project Investment Tracking",
+        "Mobile Financial Application"
+      ]
+    },
+    {
+      "phase": "Month 6-7",
+      "title": "Testing & Security Audits",
+      "description": "Comprehensive testing, security validation",
+      "status": "upcoming",
+      "deliverables": [
+        "Unit and integration testing",
+        "Security penetration testing",
+        "User acceptance testing",
+        "Performance optimization"
+      ]
+    },
+    {
+      "phase": "Month 8",
+      "title": "Finance System Go-Live",
+      "description": "Production deployment, user training",
+      "status": "upcoming",
+      "deliverables": [
+        "Production deployment",
+        "User training completion",
+        "Go-live support",
+        "Initial feedback collection"
+      ]
+    },
+    {
+      "phase": "Month 9-16",
+      "title": "Administration Phase",
+      "description": "Admin apps development and integration",
+      "status": "upcoming",
+      "deliverables": [
+        "Vehicle Booking System",
+        "Meeting Room Management",
+        "System integrations",
+        "Mobile admin applications"
+      ]
+    },
+    {
+      "phase": "Month 17-24",
+      "title": "Optimization & AI Integration",
+      "description": "Performance optimization, advanced analytics",
+      "status": "upcoming",
+      "deliverables": [
+        "Performance optimization",
+        "AI/ML integration",
+        "Advanced analytics",
+        "Final documentation"
+      ]
+    }
+  ],
+  "roiProjection": {
+    "initialInvestment": 1800000,
+    "annualSavings": 2700000,
+    "projectionYears": 3,
+    "breakEvenMonth": 8,
+    "yearlyProjections": [
+      {
+        "year": 1,
+        "investment": -1800000,
+        "savings": 1350000,
+        "netReturn": -450000,
+        "cumulativeReturn": -450000
+      },
+      {
+        "year": 2,
+        "investment": 0,
+        "savings": 2700000,
+        "netReturn": 2700000,
+        "cumulativeReturn": 2250000
+      },
+      {
+        "year": 3,
+        "investment": 0,
+        "savings": 2700000,
+        "netReturn": 2700000,
+        "cumulativeReturn": 4950000
+      }
+    ]
+  },
+  "notifications": {
+    "enabled": true,
+    "updateInterval": 30000,
+    "types": [
+      "progress_update",
+      "budget_alert",
+      "milestone_reached",
+      "risk_assessment"
+    ]
+  },
+  "integrations": {
+    "projectManagement": {
+      "enabled": false,
+      "type": "jira",
+      "apiEndpoint": ""
+    },
+    "financialSystem": {
+      "enabled": false,
+      "type": "quickbooks",
+      "apiEndpoint": ""
+    },
+    "hrSystem": {
+      "enabled": false,
+      "type": "workday",
+      "apiEndpoint": ""
+    }
+  },
+  "customization": {
+    "allowThemeChange": true,
+    "allowDataExport": true,
+    "allowPrintView": true,
+    "defaultView": "overview",
+    "autoRefresh": true
+  }
+}

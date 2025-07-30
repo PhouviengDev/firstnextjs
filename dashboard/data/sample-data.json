@@ -1,0 +1,464 @@
+{
+  "metadata": {
+    "lastUpdated": "2024-12-09T10:30:00Z",
+    "dataVersion": "1.0.0",
+    "environment": "development",
+    "sampleData": true
+  },
+  "currentProgress": {
+    "overallProgress": 15,
+    "phases": [
+      {
+        "id": 1,
+        "name": "Phase 1: Foundation & Finance",
+        "progress": 35,
+        "status": "in-progress",
+        "startDate": "2024-01-15",
+        "endDate": "2024-09-15",
+        "actualStartDate": "2024-01-15",
+        "estimatedEndDate": "2024-09-15"
+      },
+      {
+        "id": 2,
+        "name": "Phase 2: Administration & Integration", 
+        "progress": 0,
+        "status": "pending",
+        "startDate": "2024-09-16",
+        "endDate": "2024-05-16",
+        "actualStartDate": null,
+        "estimatedEndDate": "2024-05-16"
+      },
+      {
+        "id": 3,
+        "name": "Phase 3: Optimization & Expansion",
+        "progress": 0,
+        "status": "pending",
+        "startDate": "2024-05-17",
+        "endDate": "2025-01-17",
+        "actualStartDate": null,
+        "estimatedEndDate": "2025-01-17"
+      }
+    ]
+  },
+  "departmentProgress": {
+    "finance": {
+      "status": "in-progress",
+      "overallProgress": 40,
+      "applications": [
+        {
+          "name": "Invoice Management System",
+          "progress": 60,
+          "status": "in-progress",
+          "startDate": "2024-03-01",
+          "estimatedCompletion": "2024-06-30",
+          "assignedTeam": ["Senior Dev 1", "Junior Dev 1"],
+          "lastUpdate": "2024-12-09",
+          "blockers": [],
+          "milestones": [
+            { "name": "Requirements Complete", "status": "completed", "date": "2024-03-15" },
+            { "name": "Database Design", "status": "completed", "date": "2024-04-01" },
+            { "name": "API Development", "status": "in-progress", "date": "2024-05-15" },
+            { "name": "Frontend Development", "status": "pending", "date": "2024-06-01" },
+            { "name": "Testing & Deployment", "status": "pending", "date": "2024-06-30" }
+          ]
+        },
+        {
+          "name": "Income/Outcome Tracking",
+          "progress": 45,
+          "status": "in-progress",
+          "startDate": "2024-03-15",
+          "estimatedCompletion": "2024-06-15",
+          "assignedTeam": ["Senior Dev 2", "UI/UX Designer"],
+          "lastUpdate": "2024-12-09",
+          "blockers": ["Waiting for API integration"],
+          "milestones": [
+            { "name": "Dashboard Design", "status": "completed", "date": "2024-04-01" },
+            { "name": "Data Model", "status": "completed", "date": "2024-04-15" },
+            { "name": "Chart Implementation", "status": "in-progress", "date": "2024-05-30" },
+            { "name": "Real-time Updates", "status": "pending", "date": "2024-06-15" }
+          ]
+        },
+        {
+          "name": "Project Investment Tracking",
+          "progress": 30,
+          "status": "in-progress",
+          "startDate": "2024-04-01",
+          "estimatedCompletion": "2024-07-15",
+          "assignedTeam": ["Senior Dev 3"],
+          "lastUpdate": "2024-12-09",
+          "blockers": [],
+          "milestones": [
+            { "name": "ROI Calculator", "status": "completed", "date": "2024-04-30" },
+            { "name": "Portfolio Dashboard", "status": "in-progress", "date": "2024-06-01" },
+            { "name": "Reporting Engine", "status": "pending", "date": "2024-07-15" }
+          ]
+        },
+        {
+          "name": "Mobile Financial App",
+          "progress": 25,
+          "status": "in-progress",
+          "startDate": "2024-04-15",
+          "estimatedCompletion": "2024-08-15",
+          "assignedTeam": ["Junior Dev 2", "UI/UX Designer"],
+          "lastUpdate": "2024-12-09",
+          "blockers": ["iOS development setup"],
+          "milestones": [
+            { "name": "Mobile UI Design", "status": "completed", "date": "2024-05-01" },
+            { "name": "React Native Setup", "status": "in-progress", "date": "2024-05-30" },
+            { "name": "Feature Implementation", "status": "pending", "date": "2024-07-30" },
+            { "name": "App Store Submission", "status": "pending", "date": "2024-08-15" }
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "status": "planned",
+      "overallProgress": 0,
+      "applications": [
+        {
+          "name": "Vehicle Booking System",
+          "progress": 0,
+          "status": "planned",
+          "startDate": "2024-09-16",
+          "estimatedCompletion": "2024-12-16",
+          "assignedTeam": [],
+          "lastUpdate": "2024-12-09",
+          "blockers": [],
+          "milestones": [
+            { "name": "Requirements Gathering", "status": "pending", "date": "2024-10-01" },
+            { "name": "System Design", "status": "pending", "date": "2024-10-15" },
+            { "name": "Development", "status": "pending", "date": "2024-11-30" },
+            { "name": "Testing & Deployment", "status": "pending", "date": "2024-12-16" }
+          ]
+        },
+        {
+          "name": "Meeting Room Management",
+          "progress": 0,
+          "status": "planned",
+          "startDate": "2024-10-01",
+          "estimatedCompletion": "2024-12-30",
+          "assignedTeam": [],
+          "lastUpdate": "2024-12-09",
+          "blockers": [],
+          "milestones": [
+            { "name": "Calendar Integration Research", "status": "pending", "date": "2024-10-15" },
+            { "name": "Booking Engine", "status": "pending", "date": "2024-11-15" },
+            { "name": "Conflict Resolution", "status": "pending", "date": "2024-12-01" },
+            { "name": "Go Live", "status": "pending", "date": "2024-12-30" }
+          ]
+        },
+        {
+          "name": "Agenda & Meeting Dashboard",
+          "progress": 0,
+          "status": "planned",
+          "startDate": "2024-10-15",
+          "estimatedCompletion": "2025-01-15",
+          "assignedTeam": [],
+          "lastUpdate": "2024-12-09",
+          "blockers": [],
+          "milestones": [
+            { "name": "Meeting Analytics Design", "status": "pending", "date": "2024-11-01" },
+            { "name": "Action Item Tracking", "status": "pending", "date": "2024-12-01" },
+            { "name": "Dashboard Implementation", "status": "pending", "date": "2025-01-15" }
+          ]
+        },
+        {
+          "name": "Mobile Admin App",
+          "progress": 0,
+          "status": "planned",
+          "startDate": "2024-11-01",
+          "estimatedCompletion": "2025-02-01",
+          "assignedTeam": [],
+          "lastUpdate": "2024-12-09",
+          "blockers": [],
+          "milestones": [
+            { "name": "Mobile App Architecture", "status": "pending", "date": "2024-11-15" },
+            { "name": "QR Code Integration", "status": "pending", "date": "2024-12-15" },
+            { "name": "Real-time Notifications", "status": "pending", "date": "2025-01-15" },
+            { "name": "App Store Release", "status": "pending", "date": "2025-02-01" }
+          ]
+        }
+      ]
+    }
+  },
+  "budgetTracking": {
+    "totalBudget": 1800000,
+    "spentToDate": 216000,
+    "remainingBudget": 1584000,
+    "spentPercentage": 12,
+    "monthlyBurnRate": 90000,
+    "projectedSpending": [
+      { "month": "2024-01", "planned": 50000, "actual": 52000 },
+      { "month": "2024-02", "planned": 75000, "actual": 78000 },
+      { "month": "2024-03", "planned": 85000, "actual": 86000 },
+      { "month": "2024-04", "planned": 90000, "actual": 88000 },
+      { "month": "2024-05", "planned": 95000, "actual": 0 },
+      { "month": "2024-06", "planned": 100000, "actual": 0 }
+    ],
+    "categorySpending": [
+      {
+        "category": "Development Team",
+        "budgeted": 1200000,
+        "spent": 144000,
+        "remaining": 1056000,
+        "percentage": 12
+      },
+      {
+        "category": "Infrastructure & Licensing",
+        "budgeted": 300000,
+        "spent": 45000,
+        "remaining": 255000,
+        "percentage": 15
+      },
+      {
+        "category": "External Consultancy",
+        "budgeted": 150000,
+        "spent": 18000,
+        "remaining": 132000,
+        "percentage": 12
+      },
+      {
+        "category": "Training & Change Management",
+        "budgeted": 100000,
+        "spent": 5000,
+        "remaining": 95000,
+        "percentage": 5
+      },
+      {
+        "category": "Contingency",
+        "budgeted": 180000,
+        "spent": 4000,
+        "remaining": 176000,
+        "percentage": 2
+      }
+    ]
+  },
+  "teamStatus": {
+    "totalTeamMembers": 10,
+    "currentTeamMembers": 3,
+    "onboardingInProgress": 2,
+    "plannedHires": 5,
+    "teamUtilization": 75,
+    "members": [
+      {
+        "name": "John Smith",
+        "role": "Project Manager",
+        "status": "active",
+        "startDate": "2024-01-15",
+        "utilization": 100,
+        "currentTasks": ["Project planning", "Stakeholder management", "Risk assessment"]
+      },
+      {
+        "name": "Sarah Johnson",
+        "role": "DevOps Engineer",
+        "status": "active", 
+        "startDate": "2024-02-01",
+        "utilization": 90,
+        "currentTasks": ["AWS setup", "CI/CD implementation", "Security configuration"]
+      },
+      {
+        "name": "Mike Chen",
+        "role": "Senior Developer",
+        "status": "active",
+        "startDate": "2024-03-01",
+        "utilization": 85,
+        "currentTasks": ["Invoice system backend", "API development", "Database design"]
+      },
+      {
+        "name": "Alex Rodriguez",
+        "role": "Senior Developer",
+        "status": "onboarding",
+        "startDate": "2024-04-15",
+        "utilization": 60,
+        "currentTasks": ["Team onboarding", "Code review", "Architecture planning"]
+      },
+      {
+        "name": "Lisa Wang",
+        "role": "UI/UX Designer",
+        "status": "onboarding",
+        "startDate": "2024-04-01",
+        "utilization": 70,
+        "currentTasks": ["Design system", "Mobile prototypes", "User research"]
+      }
+    ]
+  },
+  "riskAssessment": {
+    "overallRiskScore": "Medium",
+    "lastAssessment": "2024-12-09",
+    "risks": [
+      {
+        "id": 1,
+        "name": "Security Vulnerabilities",
+        "level": "low",
+        "impact": "high",
+        "probability": "low",
+        "status": "mitigated",
+        "lastReview": "2024-12-01",
+        "nextReview": "2024-12-15",
+        "owner": "Sarah Johnson",
+        "actions": [
+          "Security audit scheduled for Q1 2025",
+          "Penetration testing framework established",
+          "SOC 2 compliance documentation in progress"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Integration Complexity",
+        "level": "medium",
+        "impact": "high",
+        "probability": "medium",
+        "status": "monitoring",
+        "lastReview": "2024-12-05",
+        "nextReview": "2024-12-20",
+        "owner": "Mike Chen",
+        "actions": [
+          "API documentation standardized",
+          "Integration testing framework implemented",
+          "Fallback strategies documented"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "User Adoption",
+        "level": "medium",
+        "impact": "high",
+        "probability": "medium",
+        "status": "planning",
+        "lastReview": "2024-12-08",
+        "nextReview": "2024-12-22",
+        "owner": "John Smith",
+        "actions": [
+          "Change management consultant engaged",
+          "User training curriculum being developed",
+          "Department champions identified"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Budget Overrun",
+        "level": "low",
+        "impact": "medium",
+        "probability": "medium",
+        "status": "controlled",
+        "lastReview": "2024-12-09",
+        "nextReview": "2024-12-16",
+        "owner": "John Smith",
+        "actions": [
+          "Weekly budget reviews implemented",
+          "Contingency fund allocated",
+          "Scope management protocols established"
+        ]
+      }
+    ]
+  },
+  "milestones": {
+    "completed": [
+      {
+        "name": "Project Kickoff",
+        "date": "2024-01-15",
+        "description": "Project officially started with team onboarding"
+      },
+      {
+        "name": "Infrastructure Setup",
+        "date": "2024-02-28",
+        "description": "AWS environment and CI/CD pipelines operational"
+      },
+      {
+        "name": "First Sprint Completion",
+        "date": "2024-03-15",
+        "description": "Initial development sprint completed successfully"
+      }
+    ],
+    "upcoming": [
+      {
+        "name": "Finance MVP Demo",
+        "date": "2024-06-30",
+        "description": "Demonstration of Finance application minimum viable product"
+      },
+      {
+        "name": "Security Audit",
+        "date": "2024-07-15",
+        "description": "External security audit and penetration testing"
+      },
+      {
+        "name": "Finance Go-Live",
+        "date": "2024-08-15",
+        "description": "Finance applications production deployment"
+      },
+      {
+        "name": "Administration Phase Start",
+        "date": "2024-09-16",
+        "description": "Begin Administration department application development"
+      }
+    ]
+  },
+  "performance": {
+    "velocity": {
+      "currentSprint": 32,
+      "averageVelocity": 28,
+      "trend": "increasing",
+      "sprintHistory": [18, 22, 25, 28, 30, 32]
+    },
+    "quality": {
+      "bugRate": 0.15,
+      "testCoverage": 85,
+      "codeQualityScore": 8.2,
+      "technicalDebtHours": 120
+    },
+    "productivity": {
+      "featuresCompleted": 12,
+      "featuresInProgress": 8,
+      "featuresPlanned": 35,
+      "averageFeatureCompletionTime": 2.5
+    }
+  },
+  "stakeholderFeedback": {
+    "lastSurvey": "2024-11-30",
+    "responseRate": 78,
+    "overallSatisfaction": 8.1,
+    "categories": [
+      {
+        "category": "Communication",
+        "score": 8.5,
+        "comments": ["Regular updates are helpful", "Could use more technical details"]
+      },
+      {
+        "category": "Progress",
+        "score": 7.8,
+        "comments": ["Good progress on Finance apps", "Timeline seems realistic"]
+      },
+      {
+        "category": "Quality",
+        "score": 8.3,
+        "comments": ["Demo quality was impressive", "UI design is professional"]
+      }
+    ]
+  },
+  "alerts": [
+    {
+      "id": 1,
+      "type": "info",
+      "title": "Sprint Planning Complete",
+      "message": "Sprint 6 planning completed with 32 story points planned",
+      "timestamp": "2024-12-09T09:00:00Z",
+      "read": false
+    },
+    {
+      "id": 2,
+      "type": "warning",
+      "title": "Integration Testing Delayed",
+      "message": "API integration testing delayed by 2 days due to external dependency",
+      "timestamp": "2024-12-08T14:30:00Z",
+      "read": false
+    },
+    {
+      "id": 3,
+      "type": "success",
+      "title": "Security Consultant Onboarded",
+      "message": "External security consultant successfully onboarded and access configured",
+      "timestamp": "2024-12-07T11:15:00Z",
+      "read": true
+    }
+  ]
+}

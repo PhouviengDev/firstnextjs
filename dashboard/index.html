@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Development Plan Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div class="header-content">
+                <h1><i class="fas fa-chart-line"></i> IT Development Plan Dashboard</h1>
+                <div class="header-info">
+                    <span class="project-status">Status: <span id="project-status">In Planning</span></span>
+                    <span class="last-updated">Last Updated: <span id="last-updated"></span></span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+            <!-- KPI Overview -->
+            <section class="kpi-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-tachometer-alt"></i> Key Performance Indicators</h2>
+                </div>
+                <div class="kpi-grid">
+                    <div class="kpi-card">
+                        <div class="kpi-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div class="kpi-content">
+                            <h3>Total Investment</h3>
+                            <div class="kpi-value">$1.8M</div>
+                            <div class="kpi-subtitle">24-month budget</div>
+                        </div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-icon">
+                            <i class="fas fa-chart-area"></i>
+                        </div>
+                        <div class="kpi-content">
+                            <h3>Expected ROI</h3>
+                            <div class="kpi-value">285%</div>
+                            <div class="kpi-subtitle">3-year projection</div>
+                        </div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="kpi-content">
+                            <h3>Payback Period</h3>
+                            <div class="kpi-value">18 months</div>
+                            <div class="kpi-subtitle">Break-even point</div>
+                        </div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-icon">
+                            <i class="fas fa-arrow-up"></i>
+                        </div>
+                        <div class="kpi-content">
+                            <h3>Efficiency Gain</h3>
+                            <div class="kpi-value">35%</div>
+                            <div class="kpi-subtitle">Operational improvement</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project Progress -->
+            <section class="progress-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-tasks"></i> Project Progress</h2>
+                </div>
+                <div class="progress-grid">
+                    <div class="progress-card">
+                        <h3>Overall Progress</h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 15%"></div>
+                        </div>
+                        <div class="progress-text">15% Complete</div>
+                    </div>
+                    <div class="progress-card phase-1">
+                        <h3>Phase 1: Foundation & Finance</h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 35%"></div>
+                        </div>
+                        <div class="progress-text">35% Complete</div>
+                        <div class="phase-status">In Progress</div>
+                    </div>
+                    <div class="progress-card phase-2">
+                        <h3>Phase 2: Administration & Integration</h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%"></div>
+                        </div>
+                        <div class="progress-text">Not Started</div>
+                        <div class="phase-status">Pending</div>
+                    </div>
+                    <div class="progress-card phase-3">
+                        <h3>Phase 3: Optimization & Expansion</h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%"></div>
+                        </div>
+                        <div class="progress-text">Not Started</div>
+                        <div class="phase-status">Pending</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Department Applications -->
+            <section class="departments-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-building"></i> Department Applications</h2>
+                </div>
+                <div class="departments-grid">
+                    <div class="department-card finance">
+                        <div class="department-header">
+                            <h3><i class="fas fa-calculator"></i> Finance Department</h3>
+                            <span class="department-status in-progress">In Development</span>
+                        </div>
+                        <div class="application-list">
+                            <div class="app-item">
+                                <span class="app-name">Invoice Management System</span>
+                                <span class="app-progress">60%</span>
+                            </div>
+                            <div class="app-item">
+                                <span class="app-name">Income/Outcome Tracking</span>
+                                <span class="app-progress">45%</span>
+                            </div>
+                            <div class="app-item">
+                                <span class="app-name">Project Investment Tracking</span>
+                                <span class="app-progress">30%</span>
+                            </div>
+                            <div class="app-item">
+                                <span class="app-name">Mobile Financial App</span>
+                                <span class="app-progress">25%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="department-card admin">
+                        <div class="department-header">
+                            <h3><i class="fas fa-cogs"></i> Administration Department</h3>
+                            <span class="department-status planned">Planned</span>
+                        </div>
+                        <div class="application-list">
+                            <div class="app-item">
+                                <span class="app-name">Vehicle Booking System</span>
+                                <span class="app-progress">0%</span>
+                            </div>
+                            <div class="app-item">
+                                <span class="app-name">Meeting Room Management</span>
+                                <span class="app-progress">0%</span>
+                            </div>
+                            <div class="app-item">
+                                <span class="app-name">Agenda & Meeting Dashboard</span>
+                                <span class="app-progress">0%</span>
+                            </div>
+                            <div class="app-item">
+                                <span class="app-name">Mobile Admin App</span>
+                                <span class="app-progress">0%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Timeline & Milestones -->
+            <section class="timeline-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-calendar-alt"></i> Timeline & Milestones</h2>
+                </div>
+                <div class="timeline-container">
+                    <div class="timeline">
+                        <div class="timeline-item completed">
+                            <div class="timeline-date">Month 1-2</div>
+                            <div class="timeline-content">
+                                <h4>Infrastructure Setup</h4>
+                                <p>Cloud environment, CI/CD pipelines, security protocols</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item in-progress">
+                            <div class="timeline-date">Month 3-5</div>
+                            <div class="timeline-content">
+                                <h4>Finance Application Development</h4>
+                                <p>Invoice management, tracking systems, mobile app</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item upcoming">
+                            <div class="timeline-date">Month 6-7</div>
+                            <div class="timeline-content">
+                                <h4>Testing & Security Audits</h4>
+                                <p>Comprehensive testing, security validation</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item upcoming">
+                            <div class="timeline-date">Month 8</div>
+                            <div class="timeline-content">
+                                <h4>Finance System Go-Live</h4>
+                                <p>Production deployment, user training</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item upcoming">
+                            <div class="timeline-date">Month 9-16</div>
+                            <div class="timeline-content">
+                                <h4>Administration Phase</h4>
+                                <p>Admin apps development and integration</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item upcoming">
+                            <div class="timeline-date">Month 17-24</div>
+                            <div class="timeline-content">
+                                <h4>Optimization & AI Integration</h4>
+                                <p>Performance optimization, advanced analytics</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Budget Tracking -->
+            <section class="budget-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-money-bill-wave"></i> Budget Tracking</h2>
+                </div>
+                <div class="budget-grid">
+                    <div class="budget-chart-container">
+                        <h3>Budget Allocation</h3>
+                        <canvas id="budgetChart"></canvas>
+                    </div>
+                    <div class="budget-breakdown">
+                        <h3>Budget Breakdown</h3>
+                        <div class="budget-item">
+                            <span class="budget-category">Development Team</span>
+                            <span class="budget-amount">$1,200,000 (67%)</span>
+                        </div>
+                        <div class="budget-item">
+                            <span class="budget-category">Infrastructure & Licensing</span>
+                            <span class="budget-amount">$300,000 (17%)</span>
+                        </div>
+                        <div class="budget-item">
+                            <span class="budget-category">External Consultancy</span>
+                            <span class="budget-amount">$150,000 (8%)</span>
+                        </div>
+                        <div class="budget-item">
+                            <span class="budget-category">Training & Change Management</span>
+                            <span class="budget-amount">$100,000 (6%)</span>
+                        </div>
+                        <div class="budget-item">
+                            <span class="budget-category">Contingency</span>
+                            <span class="budget-amount">$180,000 (10%)</span>
+                        </div>
+                        <div class="budget-total">
+                            <span class="budget-category">Total Budget</span>
+                            <span class="budget-amount">$1,800,000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="spend-tracking">
+                    <h3>Spending Progress</h3>
+                    <div class="spend-bar">
+                        <div class="spend-fill" style="width: 12%"></div>
+                    </div>
+                    <div class="spend-text">$216,000 spent of $1,800,000 budget (12%)</div>
+                </div>
+            </section>
+
+            <!-- ROI Projection -->
+            <section class="roi-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-chart-line"></i> ROI Projection</h2>
+                </div>
+                <div class="roi-container">
+                    <div class="roi-chart-container">
+                        <canvas id="roiChart"></canvas>
+                    </div>
+                    <div class="roi-metrics">
+                        <div class="roi-metric">
+                            <h4>Annual Savings</h4>
+                            <div class="roi-value">$2.7M</div>
+                        </div>
+                        <div class="roi-metric">
+                            <h4>Break-even Point</h4>
+                            <div class="roi-value">8 months</div>
+                        </div>
+                        <div class="roi-metric">
+                            <h4>3-Year NPV</h4>
+                            <div class="roi-value">$4.2M</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team & Resources -->
+            <section class="team-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-users"></i> Team & Resources</h2>
+                </div>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <h4>Development Team</h4>
+                        <div class="team-member">
+                            <span class="role">Project Manager</span>
+                            <span class="status hired">Hired</span>
+                        </div>
+                        <div class="team-member">
+                            <span class="role">Senior Developers (3)</span>
+                            <span class="status hiring">Hiring</span>
+                        </div>
+                        <div class="team-member">
+                            <span class="role">Junior Developers (2)</span>
+                            <span class="status planned">Planned</span>
+                        </div>
+                        <div class="team-member">
+                            <span class="role">UI/UX Designer</span>
+                            <span class="status planned">Planned</span>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <h4>Operations Team</h4>
+                        <div class="team-member">
+                            <span class="role">DevOps Engineer</span>
+                            <span class="status hired">Hired</span>
+                        </div>
+                        <div class="team-member">
+                            <span class="role">QA Engineers (2)</span>
+                            <span class="status planned">Planned</span>
+                        </div>
+                        <div class="team-member">
+                            <span class="role">Security Consultant</span>
+                            <span class="status contracted">Contracted</span>
+                        </div>
+                        <div class="team-member">
+                            <span class="role">Change Management</span>
+                            <span class="status planned">Planned</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Risk Dashboard -->
+            <section class="risk-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-exclamation-triangle"></i> Risk Dashboard</h2>
+                </div>
+                <div class="risk-grid">
+                    <div class="risk-card low">
+                        <div class="risk-level">LOW</div>
+                        <h4>Security Vulnerabilities</h4>
+                        <p>Regular audits and penetration testing scheduled</p>
+                        <div class="risk-status">Mitigated</div>
+                    </div>
+                    <div class="risk-card medium">
+                        <div class="risk-level">MEDIUM</div>
+                        <h4>Integration Complexity</h4>
+                        <p>Phased approach and thorough testing planned</p>
+                        <div class="risk-status">Monitoring</div>
+                    </div>
+                    <div class="risk-card medium">
+                        <div class="risk-level">MEDIUM</div>
+                        <h4>User Adoption</h4>
+                        <p>Change management program in development</p>
+                        <div class="risk-status">Planning</div>
+                    </div>
+                    <div class="risk-card low">
+                        <div class="risk-level">LOW</div>
+                        <h4>Budget Overrun</h4>
+                        <p>10% contingency allocated, agile methodology</p>
+                        <div class="risk-status">Controlled</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="dashboard-footer">
+            <div class="footer-content">
+                <p>&copy; 2024 IT Development Plan Dashboard | Last Updated: <span id="footer-timestamp"></span></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,720 @@
+/* IT Development Plan Dashboard Styles */
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+.dashboard-header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content h1 {
+    color: #2c3e50;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.header-content h1 i {
+    margin-right: 15px;
+    color: #3498db;
+}
+
+.header-info {
+    display: flex;
+    gap: 30px;
+    font-size: 0.95rem;
+}
+
+.project-status, .last-updated {
+    color: #666;
+}
+
+#project-status {
+    color: #27ae60;
+    font-weight: 600;
+}
+
+/* Main Content */
+.dashboard-main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Section Styles */
+section {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.section-header {
+    margin-bottom: 25px;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 15px;
+}
+
+.section-header h2 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.section-header h2 i {
+    margin-right: 12px;
+    color: #3498db;
+}
+
+/* KPI Section */
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.kpi-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    padding: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kpi-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.kpi-icon {
+    font-size: 2.5rem;
+    opacity: 0.9;
+}
+
+.kpi-content h3 {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-bottom: 8px;
+}
+
+.kpi-value {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.kpi-subtitle {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+/* Progress Section */
+.progress-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.progress-card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    border-left: 4px solid #3498db;
+}
+
+.progress-card.phase-1 {
+    border-left-color: #27ae60;
+}
+
+.progress-card.phase-2 {
+    border-left-color: #f39c12;
+}
+
+.progress-card.phase-3 {
+    border-left-color: #e74c3c;
+}
+
+.progress-card h3 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+    font-size: 1.1rem;
+}
+
+.progress-bar {
+    background: #ecf0f1;
+    border-radius: 10px;
+    height: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #27ae60, #2ecc71);
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+.progress-text {
+    font-weight: 600;
+    color: #27ae60;
+    font-size: 0.9rem;
+}
+
+.phase-status {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 10px;
+    background: #27ae60;
+    color: white;
+}
+
+/* Department Section */
+.departments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 25px;
+}
+
+.department-card {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 25px;
+    border-left: 5px solid #3498db;
+}
+
+.department-card.finance {
+    border-left-color: #27ae60;
+}
+
+.department-card.admin {
+    border-left-color: #f39c12;
+}
+
+.department-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.department-header h3 {
+    color: #2c3e50;
+    font-size: 1.2rem;
+}
+
+.department-status {
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.department-status.in-progress {
+    background: #27ae60;
+    color: white;
+}
+
+.department-status.planned {
+    background: #f39c12;
+    color: white;
+}
+
+.application-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.app-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    background: white;
+    border-radius: 8px;
+    border-left: 3px solid #3498db;
+}
+
+.app-name {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.app-progress {
+    font-weight: 600;
+    color: #27ae60;
+    background: #ecf0f1;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+}
+
+/* Timeline Section */
+.timeline-container {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, #27ae60, #3498db, #f39c12);
+}
+
+.timeline-item {
+    position: relative;
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -35px;
+    top: 25px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #95a5a6;
+}
+
+.timeline-item.completed::before {
+    background: #27ae60;
+}
+
+.timeline-item.in-progress::before {
+    background: #3498db;
+    animation: pulse 2s infinite;
+}
+
+.timeline-item.upcoming::before {
+    background: #f39c12;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.timeline-date {
+    font-weight: 600;
+    color: #3498db;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+.timeline-content h4 {
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.timeline-content p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Budget Section */
+.budget-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+.budget-chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.budget-chart-container h3 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.budget-breakdown h3 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.budget-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.budget-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-top: 2px solid #3498db;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.budget-category {
+    color: #2c3e50;
+}
+
+.budget-amount {
+    color: #27ae60;
+    font-weight: 600;
+}
+
+.spend-tracking {
+    margin-top: 25px;
+}
+
+.spend-tracking h3 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.spend-bar {
+    background: #ecf0f1;
+    border-radius: 10px;
+    height: 12px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.spend-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #3498db, #2980b9);
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+.spend-text {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* ROI Section */
+.roi-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.roi-chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.roi-metrics {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.roi-metric {
+    text-align: center;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border-left: 4px solid #27ae60;
+}
+
+.roi-metric h4 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.roi-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #27ae60;
+}
+
+/* Team Section */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.team-card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    border-left: 4px solid #3498db;
+}
+
+.team-card h4 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.team-member {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.team-member:last-child {
+    border-bottom: none;
+}
+
+.role {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.status {
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.status.hired {
+    background: #27ae60;
+    color: white;
+}
+
+.status.hiring {
+    background: #3498db;
+    color: white;
+}
+
+.status.contracted {
+    background: #9b59b6;
+    color: white;
+}
+
+.status.planned {
+    background: #f39c12;
+    color: white;
+}
+
+/* Risk Section */
+.risk-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.risk-card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+.risk-card.low {
+    border-left: 4px solid #27ae60;
+}
+
+.risk-card.medium {
+    border-left: 4px solid #f39c12;
+}
+
+.risk-card.high {
+    border-left: 4px solid #e74c3c;
+}
+
+.risk-level {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.risk-card.low .risk-level {
+    background: #27ae60;
+    color: white;
+}
+
+.risk-card.medium .risk-level {
+    background: #f39c12;
+    color: white;
+}
+
+.risk-card.high .risk-level {
+    background: #e74c3c;
+    color: white;
+}
+
+.risk-card h4 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    margin-right: 60px;
+}
+
+.risk-card p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.risk-status {
+    display: inline-block;
+    padding: 6px 15px;
+    background: #3498db;
+    color: white;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Footer */
+.dashboard-footer {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-content {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .budget-grid, .roi-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding: 15px;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .header-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .header-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .kpi-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .departments-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .progress-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .risk-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline {
+        padding-left: 20px;
+    }
+    
+    .timeline-item {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 20px 15px;
+    }
+    
+    .kpi-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .kpi-icon {
+        font-size: 2rem;
+    }
+    
+    .kpi-value {
+        font-size: 1.8rem;
+    }
+}
